@@ -1,0 +1,719 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #000;
+    border-bottom: 1px solid #333;
+}
+
+header .logo img {
+    width: 180px; /* Smaller logo */
+    height: auto; /* Ensure aspect ratio is maintained */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly; /* Even distribution of navigation items */
+    align-items: center;
+    width: 65%; /* Adjust width to control space allocation */
+}
+
+header nav .nav-links {
+    display: flex;
+    gap: 40px; /* Smaller gap between links */
+}
+
+header nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85em; /* Significantly smaller font size */
+    transition: color 0.3s ease-in-out;
+}
+
+header nav .nav-links a:hover {
+    color: #8300B3; /* Hover effect */
+}
+
+header nav .nav-buttons {
+    display: flex;
+    gap: 10px; /* Smaller gap between buttons */
+}
+
+button {
+    padding: 6px 14px; /* Smaller padding for buttons */
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85em; /* Smaller font size */
+}
+
+.btn-signin {
+    background-color: #8300B3;
+    color: #fff;
+    border: none;
+}
+
+.btn-register {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8; /* Hover effect for buttons */
+}
+
+
+
+
+
+/* Overview Section */
+#overview {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    padding: 100px 10%; /* Adjusted padding to match the margins of other sections */
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Ensure the image covers the section area, but doesn't overflow */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: relative;
+    color: white;
+    max-width: 100%; /* Ensure the section fits within the grid */
+    height: 800px; /* Maintain consistent height for the section */
+}
+
+#overview .overview-text {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Default text-align */
+}
+
+/* Top-left text (Minerio.AI) */
+#overview .overview-text.top-left {
+    top: -2%;
+    left: 5%;
+    max-width: 50%;
+    text-align: left; /* Left-align the text */
+}
+
+#overview .overview-text.top-left h1 {
+    font-size: 3.5em;
+    font-weight: 550;
+}
+
+/* Bottom-right text (Smarter ICO Decisions...) */
+#overview .overview-text.bottom-right {
+    bottom: 2%;
+    right: 5%;
+    max-width: 60%;
+    text-align: right; /* Right-align the text */
+}
+
+#overview .overview-text.bottom-right h1 {
+    font-size: 2.5em;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+#overview .overview-text.bottom-right p {
+    font-size: 1.8em;
+    line-height: 1.6;
+}
+
+/* Optional: Add some responsiveness */
+@media (max-width: 768px) {
+    #overview {
+        padding: 40px 10%; /* Adjust padding for smaller screens */
+        height: auto; /* Allow the height to adjust for smaller screens */
+    }
+
+    #overview .overview-text {
+        max-width: 100%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+        text-align: center; /* Center the text for smaller screens */
+    }
+
+    #overview .overview-text.top-left {
+        top: 10%;
+        left: 10%;
+        text-align: center; /* Center the text for small screens */
+    }
+
+    #overview .overview-text.bottom-right {
+        bottom: 10%;
+        right: 10%;
+        text-align: center; /* Center the text for small screens */
+    }
+}
+
+
+
+
+
+/* Real-Time Dashboard ICO Analysis */
+#dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #000; /* Dark background */
+    color: #fff;
+    flex-wrap: wrap; /* Allows the section to adjust in smaller screens */
+}
+
+#dashboard .dashboard-image {
+    width: 45%; /* Image size is bigger */
+    height: 280px; /* Slightly bigger height */
+    border-radius: 15px;
+    border: 3px solid #8300B3; /* Purple border */
+    overflow: hidden; /* Ensure the image stays within the rounded borders */
+}
+
+#dashboard .dashboard-image img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 95%; /* Ensures the image fills the container */
+    object-fit: cover; /* Ensures the image is displayed with cover effect within its container */
+}
+
+/* Title Section */
+#dashboard .dashboard-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    width: 90%; /* Adjust width of title */
+    padding-right: 20px; /* Space between title and body text */
+}
+
+/* Body Text Section */
+#dashboard .dashboard-text {
+    width: 50%; /* Text section still takes up half the space */
+    text-align: left;
+    padding-left: 20px; /* Add space between image and text */
+}
+
+#dashboard .dashboard-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#dashboard .dashboard-text .btn-signin {
+    background-color: #8300B3;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#dashboard .dashboard-text .btn-signin:hover {
+    opacity: 0.8; /* Hover effect for the button */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    #dashboard {
+        flex-direction: column; /* Stack the text and image on smaller screens */
+        align-items: center;
+        padding: 30px 10%;
+    }
+
+    #dashboard .dashboard-text {
+        width: 100%; /* Full width for the text on small screens */
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #dashboard .dashboard-image {
+        width: 80%; /* Image takes more space on smaller screens */
+        height: 200px; /* Adjust image height */
+        margin-top: 20px; /* Add some space between text and image */
+    }
+}
+
+
+
+
+
+
+/* Features Section */
+#features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid layout */
+    gap: 30px;
+    padding: 50px 10%;
+    background: #000; /*linear-gradient(145deg, #111, #222); /* Match app's dark theme */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.features-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #FFF; /* Bright text */
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    grid-column: span 4; /* Span the entire row */
+}
+
+.feature {
+    text-align: center;
+    background-color: #000; /* Dark card background */
+    padding: 20px;
+    border-radius: 15px; /* Adjusted rounded corners */
+    color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.feature-icon {
+    background-color: #8300B3; /* Purple background for icons */
+    color: #FFF;
+    border-radius: 15%; /* Rounded rectangle shape */
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 80px; /* Icon container size */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents content overflow */
+    margin: 0 auto 15px auto; /* Center-align icon */
+}
+
+.feature-icon img {
+    width: 100%; /* Make sure the image fits */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.feature p {
+    font-size: 1.2em;
+    color: #DDD; /* Softer text for readability */
+    margin-top: 10px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    #features {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards on smaller screens */
+    }
+
+    .features-title {
+        grid-column: span 3; /* Adjust span for smaller layouts */
+    }
+}
+
+
+
+
+
+/* What Sets Us Apart */
+#what-sets-us-apart {
+    text-align: center;
+    padding: 50px 10%;
+    background: #000; /*linear-gradient(145deg, #111, #222); /* Slightly darker gradient for depth */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Deeper shadow for contrast */
+}
+
+#what-sets-us-apart h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #F0F0F0; /* Light text for headings */
+    letter-spacing: 2px;
+}
+
+#what-sets-us-apart p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #BBB; /* Softer text for readability */
+    line-height: 1.6;
+}
+
+/* Container for bullet columns */
+#what-sets-us-apart .bullet-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px; /* Space between the two columns */
+}
+
+/* Left and Right Columns */
+#what-sets-us-apart .left-column,
+#what-sets-us-apart .right-column {
+    width: 45%; /* Each column takes up 45% of the container */
+    border: 3px solid #8300B3; /* Purple border around each column */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #000; /* Dark background for the list items */
+}
+
+#what-sets-us-apart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#what-sets-us-apart li {
+    font-size: 1.2em;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    color: #FFF; /* Bright text for legibility */
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #222; /* Darker background for list items */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Consistent shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#what-sets-us-apart li span {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #8300B3; /* Bright purple for icons */
+}
+
+#what-sets-us-apart li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Slight hover effect */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    #what-sets-us-apart .bullet-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #what-sets-us-apart .left-column,
+    #what-sets-us-apart .right-column {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    #what-sets-us-apart h3 {
+        font-size: 2em;
+    }
+
+    #what-sets-us-apart p {
+        font-size: 1.1em;
+    }
+}
+
+
+
+
+
+/* Pricing Section */
+#pricing {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    gap: 20px;
+    background: #000; /* Match dark gradient */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for the section */
+    flex-wrap: wrap; /* Allows wrapping of the plans on smaller screens */
+}
+
+#pricing .section-title {
+    width: 100%;
+    font-size: 2.2em; /* Reduced font size for the title */
+    text-align: center;
+    margin-bottom: 40px;
+    color: #F0F0F0;
+    letter-spacing: 1px;
+}
+
+/* Individual plan styles */
+.plan {
+    width: 20%;
+    padding: 60px;
+    border-radius: 15px;
+    border: 3px solid #8300B3; /* Bright purple border */
+    color: #FFF; /* Bright text for readability */
+    text-align: center;
+    background-color: #000; /* Darker background for plans */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adjusted shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em; /* Reduced font size for plan names */
+    color: #8300B3; /* Bright purple for headings */
+}
+
+.plan .price {
+    font-size: 1.6em; /* Reduced font size for prices */
+    font-weight: bold;
+    margin: 15px 0;
+    color: #8300B3; /* Bright purple for price */
+}
+
+.plan p {
+    font-size: 1.1em; /* Reduced font size for descriptions */
+    margin-bottom: 15px;
+    color: #CCC; /* Softer light text */
+    line-height: 1.5; /* Adjusted line-height for better readability */
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan li {
+    margin-bottom: 8px; /* Reduced margin between list items */
+    font-size: 1em; /* Reduced font size for list items */
+    color: #BBB; /* Subtle light text for list items */
+    display: flex;
+    align-items: center;
+}
+
+.plan li:before {
+    content: "✔️"; /* Adding checkmark before each bullet point */
+    margin-right: 10px;
+    color: #8300B3; /* Color for checkmark */
+}
+
+.plan:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Target buttons within .plan only (for Pricing Section) */
+.plan button {
+    padding: 15px 30px; /* Larger padding */
+    margin-top: 25px; /* More space between the text and the button */
+    font-size: 1.1em; /* Slightly bigger font size */
+    border-radius: 30px; /* Slightly rounder corners */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 80%; /* Full width on smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .plan .price {
+        font-size: 1.8em; /* Reduced font size on mobile */
+    }
+
+    .plan h3 {
+        font-size: 1.6em; /* Reduced font size on mobile */
+    }
+
+    .plan p {
+        font-size: 1em; /* Reduced font size on mobile */
+    }
+
+    .plan li {
+        font-size: 0.95em; /* Smaller list items on mobile */
+    }
+
+    /* Adjust the button size for mobile as well */
+    .plan button {
+        padding: 12px 24px; /* Adjusted padding for smaller screens */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensure everything aligns from the top */
+}
+
+/* Add subtle line above the footer */
+footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Light gray for the subtle line */
+    margin-bottom: 30px; /* Space between the line and the footer content */
+}
+
+/* Align logo, social media, and connect section on the left */
+footer .footer-left {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px;
+}
+
+/* Footer logo styling */
+footer .footer-logo img {
+    width: 180px; /* Increase the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't exceed the container size */
+}
+
+/* Connect with us and social media icons */
+footer .social-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px; /* Push the social section further to the right */
+    margin-top: 0; /* Align with the top of the footer */
+}
+
+footer .social-connect h4 {
+    margin-bottom: 10px; /* Space between text and icons */
+    font-size: 1.2em;
+    color: #fff;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    width: auto; /* Adjust width to fit icons */
+}
+
+footer .social-links a {
+    display: inline-block;
+    background-color: #fff;
+    width: 25px; /* Match the icon size */
+    height: 25px; /* Match the icon size */
+    padding: 0; /* Remove extra padding */
+    border-radius: 10%; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social-links a img {
+    width: 30px; /* Adjusted size for the icons */
+    height: 30px; /* Adjusted size for the icons */
+    object-fit: contain;
+}
+
+/* Footer sections on the right */
+footer .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px; /* Space between the sections */
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+/* Footer sections styling */
+footer .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+/* Footer copyright section */
+footer .footer-copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Space between social media and copyright */
+}
+
+footer .footer-copyright p {
+    color: #bbb; /* Slightly lighter color for the copyright */
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Adjusting responsiveness */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-right {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    footer .footer-logo {
+        margin-bottom: 20px;
+        max-width: 30px; /* Very small logo size for smaller screens */
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-links {
+        margin-top: 20px;
+    }
+
+    footer .footer-copyright {
+        margin-top: 20px;
+    }
+}
