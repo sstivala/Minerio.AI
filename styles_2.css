@@ -49,7 +49,6 @@ header nav .nav-links a:hover {
 header nav .nav-buttons {
     display: flex;
     gap: 10px; /* Smaller gap between buttons */
-    align-items: center; /* Ensure buttons stay in a row */
 }
 
 button {
@@ -58,7 +57,6 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-size: 0.85em; /* Smaller font size */
-    transition: opacity 0.3s ease-in-out;
 }
 
 .btn-signin {
@@ -111,7 +109,6 @@ button:hover {
         gap: 15px; /* Adjust space between buttons */
         justify-content: center; /* Center the buttons */
         margin-top: 15px;
-        width: 100%; /* Ensure buttons stretch across full width */
     }
 
     /* Adjust buttons on mobile */
@@ -147,18 +144,8 @@ button:hover {
     button {
         font-size: 0.9em; /* Slightly smaller button text for small screens */
     }
-
-    /* Ensure buttons don't pile up on very small screens */
-    header nav .nav-buttons {
-        flex-direction: column; /* Stack buttons vertically on very small screens */
-        gap: 10px;
-        width: 100%;
-    }
-
-    button {
-        width: 100%; /* Full width for buttons on very small screens */
-    }
 }
+
 
 
 /* Overview Section */
@@ -229,9 +216,9 @@ button:hover {
     #overview .overview-text {
         max-width: 100%;
         position: relative;
-        background-color: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
         text-align: center; /* Center the text for smaller screens */
         margin: 10px 0; /* Add margin to separate the text blocks */
+        background-color: transparent; /* Remove dark background */
     }
 
     #overview .overview-text.top-left {
@@ -251,15 +238,15 @@ button:hover {
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 2.5em; /* Adjust font size for mobile */
-    }
-
-    #overview .overview-text.bottom-right h1 {
         font-size: 2em; /* Adjust font size for mobile */
     }
 
+    #overview .overview-text.bottom-right h1 {
+        font-size: 1.6em; /* Adjust font size for mobile */
+    }
+
     #overview .overview-text.bottom-right p {
-        font-size: 1.5em; /* Adjust paragraph font size for mobile */
+        font-size: 1.4em; /* Adjust paragraph font size for mobile */
     }
 }
 
@@ -270,21 +257,22 @@ button:hover {
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 2.2em; /* Further reduce font size for very small screens */
-    }
-
-    #overview .overview-text.bottom-right h1 {
         font-size: 1.8em; /* Further reduce font size for very small screens */
     }
 
+    #overview .overview-text.bottom-right h1 {
+        font-size: 1.4em; /* Further reduce font size for very small screens */
+    }
+
     #overview .overview-text.bottom-right p {
-        font-size: 1.4em; /* Further reduce paragraph font size */
+        font-size: 1.2em; /* Further reduce paragraph font size */
     }
 
     #overview .overview-text {
         padding: 5px; /* Reduce padding for very small screens */
     }
 }
+
 
 
 
@@ -664,9 +652,11 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for the section */
     flex-wrap: wrap; /* Allows wrapping of the plans on smaller screens */
-    justify-content: center; /* Center the plans on mobile */
+    justify-content: center; /* Center the plans horizontally */
+    width: 100%; /* Ensure full width */
 }
 
+/* Section Title */
 #pricing .section-title {
     width: 100%;
     font-size: 2.2em; /* Reduced font size for the title */
@@ -678,7 +668,7 @@ button:hover {
 
 /* Individual plan styles */
 .plan {
-    width: 20%;
+    width: 30%; /* Set to 30% for better fitting on medium screens */
     padding: 60px;
     border-radius: 15px;
     border: 3px solid #8300B3; /* Bright purple border */
@@ -689,6 +679,7 @@ button:hover {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Plan Text */
 .plan h3 {
     margin-bottom: 10px;
     font-size: 1.8em; /* Reduced font size for plan names */
@@ -752,7 +743,7 @@ button:hover {
     }
 
     .plan {
-        width: 80%; /* Reduce width of plans for better fit */
+        width: 90%; /* Increase width on mobile for better fit */
         margin-bottom: 30px; /* Add spacing between plans */
     }
 
@@ -812,6 +803,7 @@ button:hover {
         font-size: 0.95em; /* Adjust button font size */
     }
 }
+
 
 
 
@@ -957,7 +949,11 @@ footer .footer-copyright p {
 
     footer .footer-logo {
         margin-bottom: 20px;
-        max-width: 30px; /* Very small logo size for smaller screens */
+        max-width: 50%; /* Set logo to take up more space */
+    }
+
+    footer .footer-logo img {
+        width: 150px; /* Larger logo on tablets */
     }
 
     footer .footer-links {
@@ -1000,6 +996,10 @@ footer .footer-copyright p {
     footer .social-links a {
         width: 20px;
         height: 20px;
+    }
+
+    footer .footer-logo img {
+        width: 200px; /* Increase logo size on very small screens */
     }
 
     footer .footer-section a {
