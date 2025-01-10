@@ -101,7 +101,7 @@ button:hover {
     }
 
     header nav .nav-links a {
-        font-size: 1em; /* Larger font size for mobile */
+        font-size: 0.8em; /* Larger font size for mobile */
     }
 
     header nav .nav-buttons {
@@ -114,7 +114,7 @@ button:hover {
     /* Adjust buttons on mobile */
     button {
         padding: 8px 18px; /* Increase padding for larger tap targets */
-        font-size: 1em; /* Slightly larger text on buttons */
+        font-size: 0.8em; /* Slightly larger text on buttons */
     }
 
     .btn-signin {
@@ -142,7 +142,7 @@ button:hover {
     }
 
     button {
-        font-size: 0.9em; /* Slightly smaller button text for small screens */
+        font-size: 0.8em; /* Slightly smaller button text for small screens */
     }
 }
 
@@ -237,7 +237,7 @@ button:hover {
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 1.8em; /* Increase font size for top-left text on mobile */
+        font-size: 1.9em; /* Increase font size for top-left text on mobile */
     }
 
     #overview .overview-text.bottom-right h1 {
@@ -354,7 +354,7 @@ button:hover {
     }
 
     #dashboard .dashboard-text h2 {
-        font-size: 2em; /* Adjust font size for mobile */
+        font-size: 1.65em; /* Adjust font size for mobile */
         margin-bottom: 15px; /* Reduce space below title */
     }
 
@@ -384,7 +384,7 @@ button:hover {
     }
 
     #dashboard .dashboard-text h2 {
-        font-size: 1.7em; /* Further reduce font size for very small screens */
+        font-size: 1.65em; /* Further reduce font size for very small screens */
     }
 
     #dashboard .dashboard-text p {
