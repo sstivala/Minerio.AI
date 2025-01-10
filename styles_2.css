@@ -88,43 +88,9 @@ button:hover {
         width: 150px; /* Slightly smaller logo on mobile */
     }
 
+    /* Hide navigation links and buttons on mobile */
     header nav {
-        width: 100%; /* Full width for nav */
-        flex-direction: column; /* Stack navigation vertically */
-        gap: 15px; /* Smaller gap between items */
-        margin-top: 20px;
-        justify-content: center; /* Center nav items vertically */
-    }
-
-    header nav .nav-links {
-        display: flex;
-        flex-direction: column; /* Stack nav links vertically */
-        gap: 10px; /* Space between links */
-    }
-
-    header nav .nav-links a {
-        font-size: 0.8em; /* Larger font size for mobile */
-    }
-
-    header nav .nav-buttons {
-        display: flex;
-        gap: 15px; /* Adjust space between buttons */
-        justify-content: center; /* Center the buttons */
-        margin-top: 15px;
-    }
-
-    /* Adjust buttons on mobile */
-    button {
-        padding: 8px 18px; /* Increase padding for larger tap targets */
-        font-size: 0.8em; /* Slightly larger text on buttons */
-    }
-
-    .btn-signin {
-        width: 100%; /* Make sign-in button full-width */
-    }
-
-    .btn-register {
-        width: 100%; /* Make register button full-width */
+        display: none; /* Hide nav */
     }
 }
 
@@ -134,17 +100,9 @@ button:hover {
         padding: 10px 5%; /* Reduce padding further on very small screens */
     }
 
+    /* Hide navigation links and buttons on smaller screens */
     header nav {
-        padding-left: 5%; /* Align nav links better */
-        padding-right: 5%;
-    }
-
-    header nav .nav-links {
-        gap: 8px; /* Reduce gap between links further */
-    }
-
-    button {
-        font-size: 0.8em; /* Slightly smaller button text for small screens */
+        display: none; /* Hide nav */
     }
 }
 
@@ -243,7 +201,7 @@ button:hover {
     }
 
     #overview .overview-text {
-        max-width: 90%; /* Increased width for larger text blocks */
+        max-width: 100%; /* Increased width for larger text blocks */
         position: relative;
         text-align: center; /* Center the text for smaller screens */
         margin: 10px 0; /* Add margin to separate the text blocks */
@@ -251,17 +209,18 @@ button:hover {
     }
 
     #overview .overview-text.top-left {
-        top: 0; /* Adjust position to the top-left */
-        left: 0;
-        padding: 5px; /* Add padding to avoid text being too close to the edges */
+        top: 40px; /* Adjust position to the top-left */
+        left: 0%;
+        max-width: 60%;
+        padding: 30px; /* Add padding to avoid text being too close to the edges */
         text-align: left; /* Left-align the text */
     }
 
     #overview .overview-text.bottom-right {
-        bottom: 10%; /* Adjust the position from the bottom */
-        right: 0;
-        left: 0;
-        padding: 5px; /* Add padding to avoid text being too close to the edges */
+        bottom: 40px; /* Position text at the bottom */
+        right: 0%;
+        max-width: 60%;
+        padding: 20px; /* Add padding to avoid text being too close to the edges */
         text-align: right; /* Right-align the text */
     }
 
@@ -279,7 +238,7 @@ button:hover {
 
     /* Adjust the button container and button for mobile */
     .download-button-container {
-        bottom: 0px; /* Adjust the position for smaller screens */
+        bottom: 10px; /* Adjust the position for smaller screens */
     }
 
     .btn-download {
@@ -292,39 +251,68 @@ button:hover {
 @media (max-width: 480px) {
     #overview {
         padding: 20px 5%; /* Reduce padding for very small screens */
+        height: auto; /* Allow the height to adjust dynamically */
+        background-size: cover; /* Ensure the image covers the area */
+        background-position: center center; /* Ensure image is centered */
+        background-repeat: no-repeat; /* Prevent image from repeating */
     }
 
     #overview .overview-text {
         max-width: 100%; /* Ensure full width for text blocks */
-        padding: 5px; /* Reduce padding for very small screens */
+        padding: 10px; /* Increase padding for better readability */
+        position: relative; /* Allow for better positioning of elements */
+        text-align: center; /* Center-align the text */
+    }
+
+    #overview .overview-text.top-left,
+    #overview .overview-text.bottom-right {
+        max-width: 100%; /* Allow text blocks to expand fully */
+        width: 100%; /* Set width to 100% to fill the screen */
+    }
+
+    /* Move the top-left text higher */
+    #overview .overview-text.top-left {
+        bottom: 75px;
+        right: 0%;
+        left: 5;
+        top: 5%; /* Adjust top position to move text higher */
+    }
+
+    /* Position the bottom-right text from the center to the right */
+    #overview .overview-text.bottom-right {
+        bottom: -20px; /* Adjust bottom position to move text lower */
+        width: 75%;
+        left: 60%; /* Center the text horizontally */
+        transform: translateX(-50%); /* Adjust the alignment to center it */
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 1.65em; /* Further adjust font size for very small screens */
+        font-size: 1.6em; /* Increase font size for top-left text */
+        margin-bottom: 10px; /* Add margin for better spacing */
     }
 
     #overview .overview-text.bottom-right h1 {
-        font-size: 1.2em; /* Further adjust font size for very small screens */
+        font-size: 0.80em; /* Increase font size for bottom-right text */
+        margin-bottom: 15px; /* Add margin for better spacing */
     }
 
     #overview .overview-text.bottom-right p {
-        font-size: 0.9em; /* Further reduce paragraph font size */
+        font-size: 0.6em; /* Increase paragraph font size */
+        line-height: 1.5; /* Adjust line height for readability */
     }
 
     /* Adjust the button container and button for very small screens */
     .download-button-container {
-        bottom: 0px; /* Adjust the position further */
+        bottom: 5px; /* Adjust position of download button */
+        width: 100%; /* Make the download button span full width */
+        text-align: center;
     }
 
     .btn-download {
-        font-size: 0.8em; /* Further reduce font size */
-        padding: 8px 15px; /* Adjust padding */
+        font-size: 0.6em; /* Adjust font size for button */
+        padding: 8px 15px; /* Adjust padding for better tap size */
     }
 }
-
-
-
-
 
 
 /* Real-Time Dashboard ICO Analysis */
