@@ -214,7 +214,7 @@ button:hover {
     }
 
     #overview .overview-text {
-        max-width: 100%;
+        max-width: 90%; /* Increased width for larger text blocks */
         position: relative;
         text-align: center; /* Center the text for smaller screens */
         margin: 10px 0; /* Add margin to separate the text blocks */
@@ -237,15 +237,15 @@ button:hover {
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 2.5em; /* Adjust font size for mobile */
+        font-size: 3.2em; /* Increase font size for top-left text on mobile */
     }
 
     #overview .overview-text.bottom-right h1 {
-        font-size: 2em; /* Adjust font size for mobile */
+        font-size: 2.5em; /* Increase font size for bottom-right header on mobile */
     }
 
     #overview .overview-text.bottom-right p {
-        font-size: 1.6em; /* Adjust paragraph font size for mobile */
+        font-size: 2em; /* Increase paragraph font size for mobile */
     }
 }
 
@@ -255,20 +255,21 @@ button:hover {
         padding: 20px 5%; /* Reduce padding for very small screens */
     }
 
+    #overview .overview-text {
+        max-width: 100%; /* Ensure full width for text blocks */
+        padding: 5px; /* Reduce padding for very small screens */
+    }
+
     #overview .overview-text.top-left h1 {
-        font-size: 2.2em; /* Further reduce font size for very small screens */
+        font-size: 2.6em; /* Further adjust font size for very small screens */
     }
 
     #overview .overview-text.bottom-right h1 {
-        font-size: 1.8em; /* Further reduce font size for very small screens */
+        font-size: 2.1em; /* Further adjust font size for very small screens */
     }
 
     #overview .overview-text.bottom-right p {
-        font-size: 1.4em; /* Further reduce paragraph font size */
-    }
-
-    #overview .overview-text {
-        padding: 5px; /* Reduce padding for very small screens */
+        font-size: 1.6em; /* Further reduce paragraph font size */
     }
 }
 
@@ -737,10 +738,12 @@ button:hover {
         align-items: center;
         padding: 40px 10%;
         justify-content: center; /* Ensure centering on mobile */
+        max-width: 90%; /* Make the pricing section smaller */
+        margin: 0 auto; /* Center the section horizontally */
     }
 
     .plan {
-        width: 80%; /* Reduce width of plans for better fit */
+        width: 70%; /* Reduce width of plans for better fit */
         margin-bottom: 30px; /* Add spacing between plans */
     }
 
@@ -775,8 +778,9 @@ button:hover {
     }
 
     .plan {
-        width: 90%; /* Full width on very small screens */
+        width: 85%; /* Full width on very small screens, but slightly reduced */
         padding: 40px; /* Adjust padding for mobile */
+        margin: 10px 0; /* Add margin between plans */
     }
 
     .plan .price {
