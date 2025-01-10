@@ -224,7 +224,7 @@ button:hover {
     #overview .overview-text.top-left {
         top: 0; /* Adjust position to the top-left */
         left: 0;
-        padding: 10px; /* Add padding to avoid text being too close to the edges */
+        padding: 5px; /* Add padding to avoid text being too close to the edges */
         text-align: left; /* Left-align the text */
     }
 
@@ -232,20 +232,20 @@ button:hover {
         bottom: 10%; /* Adjust the position from the bottom */
         right: 0;
         left: 0;
-        padding: 10px; /* Add padding to avoid text being too close to the edges */
+        padding: 5px; /* Add padding to avoid text being too close to the edges */
         text-align: right; /* Right-align the text */
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 3.2em; /* Increase font size for top-left text on mobile */
+        font-size: 1.8em; /* Increase font size for top-left text on mobile */
     }
 
     #overview .overview-text.bottom-right h1 {
-        font-size: 2.5em; /* Increase font size for bottom-right header on mobile */
+        font-size: 1.1em; /* Increase font size for bottom-right header on mobile */
     }
 
     #overview .overview-text.bottom-right p {
-        font-size: 2em; /* Increase paragraph font size for mobile */
+        font-size: 0.8em; /* Increase paragraph font size for mobile */
     }
 }
 
@@ -261,15 +261,15 @@ button:hover {
     }
 
     #overview .overview-text.top-left h1 {
-        font-size: 2.6em; /* Further adjust font size for very small screens */
+        font-size: 1.65em; /* Further adjust font size for very small screens */
     }
 
     #overview .overview-text.bottom-right h1 {
-        font-size: 2.1em; /* Further adjust font size for very small screens */
+        font-size: 1.2em; /* Further adjust font size for very small screens */
     }
 
     #overview .overview-text.bottom-right p {
-        font-size: 1.6em; /* Further reduce paragraph font size */
+        font-size: 0.9em; /* Further reduce paragraph font size */
     }
 }
 
@@ -392,7 +392,7 @@ button:hover {
     }
 
     #dashboard .dashboard-image {
-        width: 90%; /* Image takes even more space */
+        width: 100%; /* Image takes even more space */
         height: 180px; /* Further reduce image height */
     }
 
@@ -496,7 +496,7 @@ button:hover {
 /* Very Small Screens (Phones in portrait mode) */
 @media (max-width: 480px) {
     #features {
-        padding: 20px 5%; /* Reduce padding for very small screens */
+        padding: 40px 5%; /* Reduce padding for very small screens */
         grid-template-columns: repeat(2, 1fr); /* Two columns on very small screens */
         gap: 15px; /* Further reduce gap between items */
     }
@@ -738,7 +738,7 @@ button:hover {
         align-items: center;
         padding: 40px 10%;
         justify-content: center; /* Ensure centering on mobile */
-        max-width: 90%; /* Make the pricing section smaller */
+        max-width: 100%; /* Make the pricing section smaller */
         margin: 0 auto; /* Center the section horizontally */
     }
 
@@ -778,7 +778,7 @@ button:hover {
     }
 
     .plan {
-        width: 85%; /* Full width on very small screens, but slightly reduced */
+        width: 70%; /* Full width on very small screens, but slightly reduced */
         padding: 40px; /* Adjust padding for mobile */
         margin: 10px 0; /* Add margin between plans */
     }
