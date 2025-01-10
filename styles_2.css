@@ -220,7 +220,7 @@ button:hover {
         bottom: 40px; /* Position text at the bottom */
         right: 0%;
         max-width: 60%;
-        padding: 20px; /* Add padding to avoid text being too close to the edges */
+        padding: 30px; /* Add padding to avoid text being too close to the edges */
         text-align: right; /* Right-align the text */
     }
 
@@ -280,7 +280,7 @@ button:hover {
 
     /* Position the bottom-right text from the center to the right */
     #overview .overview-text.bottom-right {
-        bottom: -20px; /* Adjust bottom position to move text lower */
+        bottom: -25px; /* Adjust bottom position to move text lower */
         width: 75%;
         left: 60%; /* Center the text horizontally */
         transform: translateX(-50%); /* Adjust the alignment to center it */
