@@ -49,6 +49,7 @@ header nav .nav-links a:hover {
 header nav .nav-buttons {
     display: flex;
     gap: 10px; /* Smaller gap between buttons */
+    align-items: center; /* Ensure buttons stay in a row */
 }
 
 button {
@@ -57,6 +58,7 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-size: 0.85em; /* Smaller font size */
+    transition: opacity 0.3s ease-in-out;
 }
 
 .btn-signin {
@@ -109,6 +111,7 @@ button:hover {
         gap: 15px; /* Adjust space between buttons */
         justify-content: center; /* Center the buttons */
         margin-top: 15px;
+        width: 100%; /* Ensure buttons stretch across full width */
     }
 
     /* Adjust buttons on mobile */
@@ -144,6 +147,17 @@ button:hover {
     button {
         font-size: 0.9em; /* Slightly smaller button text for small screens */
     }
+
+    /* Ensure buttons don't pile up on very small screens */
+    header nav .nav-buttons {
+        flex-direction: column; /* Stack buttons vertically on very small screens */
+        gap: 10px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%; /* Full width for buttons on very small screens */
+    }
 }
 
 
@@ -169,6 +183,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     text-align: left; /* Default text-align */
+    width: 100%; /* Ensure the text blocks fit within the container */
 }
 
 /* Top-left text (Smarter ICO Decisions...) */
@@ -208,6 +223,7 @@ button:hover {
     #overview {
         padding: 40px 5%; /* Adjust padding for smaller screens */
         height: auto; /* Allow the height to adjust for smaller screens */
+        flex-direction: column; /* Stack the two text blocks vertically */
     }
 
     #overview .overview-text {
@@ -215,6 +231,7 @@ button:hover {
         position: relative;
         background-color: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
         text-align: center; /* Center the text for smaller screens */
+        margin: 10px 0; /* Add margin to separate the text blocks */
     }
 
     #overview .overview-text.top-left {
@@ -263,7 +280,12 @@ button:hover {
     #overview .overview-text.bottom-right p {
         font-size: 1.4em; /* Further reduce paragraph font size */
     }
+
+    #overview .overview-text {
+        padding: 5px; /* Reduce padding for very small screens */
+    }
 }
+
 
 
 /* Real-Time Dashboard ICO Analysis */
@@ -397,7 +419,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid layout */
     gap: 30px;
     padding: 50px 10%;
-    background: #000; /*linear-gradient(145deg, #111, #222); /* Match app's dark theme */
+    background: #000; /* Match app's dark theme */
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
@@ -455,11 +477,13 @@ button:hover {
 /* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
     #features {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards on smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        gap: 20px; /* Smaller gap between items */
+        padding: 30px 5%; /* Adjust padding for smaller screens */
     }
 
     .features-title {
-        grid-column: span 3; /* Adjust span for smaller layouts */
+        grid-column: span 2; /* Title spans across the two columns */
         font-size: 2em; /* Smaller title font size on mobile */
         margin-bottom: 30px; /* Reduce the space below the title */
     }
@@ -484,6 +508,8 @@ button:hover {
 @media (max-width: 480px) {
     #features {
         padding: 20px 5%; /* Reduce padding for very small screens */
+        grid-template-columns: repeat(2, 1fr); /* Two columns on very small screens */
+        gap: 15px; /* Further reduce gap between items */
     }
 
     .features-title {
@@ -505,6 +531,7 @@ button:hover {
         font-size: 0.9em; /* Further reduce paragraph font size */
     }
 }
+
 
 
 /* What Sets Us Apart */
@@ -637,6 +664,7 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for the section */
     flex-wrap: wrap; /* Allows wrapping of the plans on smaller screens */
+    justify-content: center; /* Center the plans on mobile */
 }
 
 #pricing .section-title {
@@ -720,10 +748,11 @@ button:hover {
         flex-direction: column;
         align-items: center;
         padding: 40px 10%;
+        justify-content: center; /* Ensure centering on mobile */
     }
 
     .plan {
-        width: 80%; /* Full width on smaller screens */
+        width: 80%; /* Reduce width of plans for better fit */
         margin-bottom: 30px; /* Add spacing between plans */
     }
 
@@ -783,6 +812,7 @@ button:hover {
         font-size: 0.95em; /* Adjust button font size */
     }
 }
+
 
 
 /* Footer */
