@@ -1,3 +1,5 @@
+/*091747*/
+
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
@@ -18,7 +20,7 @@ header {
 }
 
 header .logo img {
-    width: 180px; /* Smaller logo */
+    width: 100px; /* Smaller logo */
     height: auto; /* Ensure aspect ratio is maintained */
 }
 
@@ -44,7 +46,7 @@ header nav .nav-links a {
 }
 
 header nav .nav-links a:hover {
-    color: #8300B3; /* Hover effect */
+    color: #45C9B2; /* Hover effect */
 }
 
 header nav .nav-buttons {
@@ -61,7 +63,7 @@ button {
 }
 
 .btn-signin {
-    background-color: #8300B3;
+    background-color: #45C9B2;
     color: #fff;
     border: none;
 }
@@ -85,7 +87,7 @@ button:hover {
     }
 
     header .logo img {
-        width: 150px; /* Slightly smaller logo on mobile */
+        width: 100px; /* Slightly smaller logo on mobile */
     }
 
     /* Hide navigation links and buttons on mobile */
@@ -176,7 +178,7 @@ button:hover {
 
 /* Button styling */
 .btn-download {
-    background-color: #8300B3; /* Bright purple color */
+    background-color: #45C9B2; /* Bright purple color */
     color: white;
     padding: 15px 30px;
     font-size: 1.3em;
@@ -189,7 +191,7 @@ button:hover {
 }
 
 .btn-download:hover {
-    background-color: #6A008C; /* Darker shade of purple for hover effect */
+    background-color: #45C9B2; /* Darker shade of purple for hover effect */
 }
 
 /* Mobile Responsiveness */
@@ -330,13 +332,13 @@ button:hover {
     width: 45%; /* Image size is bigger */
     height: 280px; /* Slightly bigger height */
     border-radius: 15px;
-    border: 3px solid #8300B3; /* Purple border */
+    border: 3px solid #45C9B2; /* Purple border */
     overflow: hidden; /* Ensure the image stays within the rounded borders */
 }
 
 #dashboard .dashboard-image img {
     width: 100%; /* Ensures the image fills the container */
-    height: 95%; /* Ensures the image fills the container */
+    height: 92.5%; /* Ensures the image fills the container */
     object-fit: cover; /* Ensures the image is displayed with cover effect within its container */
 }
 
@@ -362,7 +364,7 @@ button:hover {
 }
 
 #dashboard .dashboard-text .btn-signin {
-    background-color: #8300B3;
+    background-color: #45C9B2;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -447,8 +449,6 @@ button:hover {
     gap: 30px;
     padding: 50px 10%;
     background: #000; /* Match app's dark theme */
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 .features-title {
@@ -476,7 +476,7 @@ button:hover {
 }
 
 .feature-icon {
-    background-color: #8300B3; /* Purple background for icons */
+    background-color: #45C9B2; /* Purple background for icons */
     color: #FFF;
     border-radius: 15%; /* Rounded rectangle shape */
     padding: 15px;
@@ -517,7 +517,7 @@ button:hover {
 
     .feature {
         padding: 15px; /* Reduce padding for smaller screens */
-        font-size: 1.1em; /* Reduce font size for better fit */
+        font-size: 1.0em; /* Reduce font size for better fit */
     }
 
     .feature-icon {
@@ -527,7 +527,7 @@ button:hover {
     }
 
     .feature p {
-        font-size: 1em; /* Adjust paragraph font size */
+        font-size: 0.8em; /* Adjust paragraph font size */
     }
 }
 
@@ -566,8 +566,6 @@ button:hover {
     text-align: center;
     padding: 50px 10%;
     background: #000; /*linear-gradient(145deg, #111, #222); /* Slightly darker gradient for depth */
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Deeper shadow for contrast */
 }
 
 #what-sets-us-apart h3 {
@@ -598,7 +596,7 @@ button:hover {
 #what-sets-us-apart .left-column,
 #what-sets-us-apart .right-column {
     width: 45%; /* Each column takes up 45% of the container */
-    border: 3px solid #8300B3; /* Purple border around each column */
+    border: 3px solid #45C9B2; /* Purple border around each column */
     border-radius: 10px;
     padding: 20px;
     background-color: #000; /* Dark background for the list items */
@@ -618,7 +616,8 @@ button:hover {
     color: #FFF; /* Bright text for legibility */
     padding: 10px 20px;
     border-radius: 10px;
-    background: #222; /* Darker background for list items */
+    text-align: left;
+    background: #000; /* Darker background for list items */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Consistent shadow effect */
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -626,7 +625,7 @@ button:hover {
 #what-sets-us-apart li span {
     font-size: 1.5em;
     margin-right: 15px;
-    color: #8300B3; /* Bright purple for icons */
+    color: #45C9B2; /* Bright purple for icons */
 }
 
 #what-sets-us-apart li:hover {
@@ -688,8 +687,6 @@ button:hover {
     padding: 50px 10%;
     gap: 20px;
     background: #000; /* Match dark gradient */
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for the section */
     flex-wrap: wrap; /* Allows wrapping of the plans on smaller screens */
     justify-content: center; /* Center the plans on mobile */
 }
@@ -708,7 +705,7 @@ button:hover {
     width: 20%;
     padding: 60px;
     border-radius: 15px;
-    border: 3px solid #8300B3; /* Bright purple border */
+    border: 3px solid #45C9B2; /* Bright purple border */
     color: #FFF; /* Bright text for readability */
     text-align: center;
     background-color: #000; /* Darker background for plans */
@@ -719,14 +716,14 @@ button:hover {
 .plan h3 {
     margin-bottom: 10px;
     font-size: 1.8em; /* Reduced font size for plan names */
-    color: #8300B3; /* Bright purple for headings */
+    color: #45C9B2; /* Bright purple for headings */
 }
 
 .plan .price {
     font-size: 1.6em; /* Reduced font size for prices */
     font-weight: bold;
     margin: 15px 0;
-    color: #8300B3; /* Bright purple for price */
+    color: #45C9B2; /* Bright purple for price */
 }
 
 .plan p {
@@ -753,7 +750,7 @@ button:hover {
 .plan li:before {
     content: "✔️"; /* Adding checkmark before each bullet point */
     margin-right: 10px;
-    color: #8300B3; /* Color for checkmark */
+    color: #45C9B2; /* Color for checkmark */
 }
 
 .plan:hover {
@@ -865,7 +862,7 @@ button:hover {
 }
 
 .faq-question {
-    background-color: #8300B3; /* Bright purple for question button */
+    background-color: #45C9B2; /* Bright purple for question button */
     color: white;
     font-size: 1.2em;
     padding: 15px;
@@ -878,7 +875,7 @@ button:hover {
 }
 
 .faq-question:hover {
-    background-color: #6A008C; /* Darker shade of purple for hover effect */
+    background-color: #45C9B2; /* Darker shade of purple for hover effect */
 }
 
 /* Styling for the answer, initially hidden */
@@ -887,7 +884,7 @@ button:hover {
     background-color: #000; /* Black background for the answer */
     color: white; /* White text for the answer */
     padding: 15px;
-    border: 2px solid #8300B3; /* Border with the same bright purple color */
+    border: 2px solid #45C9B2; /* Border with the same bright purple color */
     border-radius: 10px; /* Rounded corners */
     text-align: left;
     font-size: 1.1em;
@@ -973,7 +970,7 @@ footer .footer-left {
 
 /* Footer logo styling */
 footer .footer-logo img {
-    width: 180px; /* Adjust the width of the logo */
+    width: 100px; /* Adjust the width of the logo */
     height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Ensures the image doesn't exceed the container size */
 }
@@ -1050,7 +1047,7 @@ footer .footer-copyright p {
     }
 
     footer .footer-logo img {
-        width: 150px; /* Adjust logo size */
+        width: 100px; /* Adjust logo size */
     }
 
     footer .social-links {
@@ -1091,7 +1088,7 @@ footer .footer-copyright p {
     }
 
     footer .footer-logo img {
-        width: 200px; /* Increase logo size on very small screens */
+        width: 100px; /* Increase logo size on very small screens */
     }
 
     footer .footer-copyright p {
